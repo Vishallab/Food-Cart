@@ -1,0 +1,14 @@
+<resources>
+    <string-array name="food_categories">
+        <item>All</item>
+        <item>Pizza</item>
+        <item>Burger</item>
+        <item>Chinese</item>
+        <item>Chowmin</item>
+        <item>Pasta</item>
+        <item>Momo</item>
+        <item>Drinks</item>
+        <item>Meal Bowl</item>
+
+    </string-array>
+</resources>

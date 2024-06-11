@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Food Cart</string>
+    <string name="cart">Cart</string>
+    <string name="history">History</string>
+    <string name="my_cart">My Cart</string>
+    <string name="hint_name">Enter your name</string>
+    <string name="hint_address">Enter your address</string>
+    <string name="your_order">Your Order:</string>
+    <string name="confirm_order">Confirm Order</string>
+    <string name="order_history">Order History</string>
+</resources>

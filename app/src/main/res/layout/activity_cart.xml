@@ -1,0 +1,109 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- Top header bar -->
+    <TextView
+        android:id="@+id/titleTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:padding="16dp"
+        android:text="@string/my_cart"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <!-- Scrollview -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/titleTextView">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <!-- User input fields -->
+            <EditText
+                android:id="@+id/nameEditText"
+                android:background="@drawable/custom_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:hint="@string/hint_name"
+                android:inputType="textAutoComplete"
+                android:minHeight="48dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp" />
+
+            <EditText
+                android:id="@+id/addressEditText"
+                android:background="@drawable/custom_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nameEditText"
+                android:layout_marginTop="16dp"
+                android:hint="@string/hint_address"
+                android:inputType="textAutoComplete"
+                android:minHeight="48dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="25dp"
+                android:padding="10dp" />
+
+            <!-- Selected foods -->
+            <TextView
+                android:id="@+id/yourOrder"
+                android:textColor="@color/black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:text="@string/your_order"
+                android:layout_below="@id/addressEditText"
+                android:layout_marginTop="16dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/selectedFoodsTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:textSize="20sp"
+                android:paddingTop="20dp"
+                android:layout_below="@id/yourOrder"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Total -->
+            <TextView
+                android:id="@+id/totalTextView"
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_below="@id/selectedFoodsTextView"
+                android:padding="20dp"
+                android:layout_marginBottom="16dp" />
+
+            <!-- Confirm order button -->
+            <Button
+                android:id="@+id/confirmOrderButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm_order"
+                android:background="@drawable/btn_bg"
+                android:layout_below="@id/totalTextView"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="30dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
