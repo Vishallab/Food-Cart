@@ -1,4 +1,4 @@
-# Chartr App Clone
+# Food Cart App
 
 ## Description
 This repository contains a online food booking app, a public food oerering application. 
